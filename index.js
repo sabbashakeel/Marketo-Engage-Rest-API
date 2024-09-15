@@ -4,8 +4,8 @@ const axios = require('axios');
 // Function to fetch data from the API
 async function fetchData() {
     // Your API URL and API key
-    const url = 'http://api.mtrack.eu/api/v1/vehicle';
-    const apiKey = 'b8cdb40d-5b2b-5ad4-aa50-c3eca4868b69';
+    const url = 'YOUR_API_URL';
+    const apiKey = 'YOUR_API_KEY';
 
     try {
         const response = await axios.get(url, {
@@ -30,7 +30,7 @@ async function saveDataToPostgres(data) {
         user: 'postgres',
         host: 'localhost',
         database: 'postgres',
-        password: '12345',
+        password: 'PASSWORD',
         port: 5432,
     });
 
